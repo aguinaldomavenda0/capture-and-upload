@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG</title>
+</head>
+<style>
+
+</style>
+<body>
+    <input type="file" id="input-tag"/>
+    <hr>
+    <img src="" id="eee-e" alt="">
+
+    <script>
+        const videoSrc = document.querySelector("#video-source");
+        const videoTag = document.querySelector("#eee-e");
+        const inputTag = document.querySelector("#input-tag");
+
+        inputTag.addEventListener('change', readVideo)
+        function readVideo(event) {
+            
+            visualizacaoImagens(event.target)
+            }
+
+        
+        
+        let visualizacaoImagens = (input) =>{    
+            if (input.files) {
+                let quantImagens = input.files.length;
+
+                for (i = 0; i < quantImagens; i++) {
+                    let reader = new FileReader();
+
+                    reader.onload = function(event) {
+                        videoTag.src = event.target.result
+                    }
+
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+        }    
+
+
+    </script>
+</body>
+</html>

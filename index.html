@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpLoaded Files on DataBase</title>
+    <link rel="stylesheet" href="./boxicons/boxicons.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <main>
+        <div class="mensagem__modal no-active">
+            <div class="display">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta doloribus ipsa rem, eveniet dolor voluptatum esse quae odio repe</p>
+                <button class="ok-button">Ok</button>
+            </div>
+        </div>
+        <form action="#!" class="form-uploaded">
+            
+            <div class="info__preview">
+                <input type="file" accept="image/*" name="file" id="file" ondragenter="" >
+                <video class="camera-foto" autoplay></video>
+                <img src="" class="img-loaded" id="img-loaded" alt="">
+                <canvas id="canvas" class="img-loaded-end active"></canvas>
+                <span class="path__file">Selecione foto</span>    
+                
+            </div>
+
+            <div class="action__buttons">
+                <nav>
+                    <ul><li><a href="#!" class="select-file"><i class='bx bx-image-alt' ></i></a></li></ul>
+                    <ul><li><a id="capture-file" href="#!"><i class="bx bx-camera"></i></a></li></ul>
+                    <ul><li><a href="#!" id="save-photo"> <i class="bx bx-save"> </i></a></li></ul>
+                    <ul><li><a href="./index/"> <i class="bx bx-user"> </i></a></li></ul>
+                    <ul><li><a href="./index/"> <i class='bx bxs-file-pdf'></i></a></li></ul>
+                  
+                </nav>
+                <!--button class="select-file btn"> <i class="bx bx-home"></i> Selecionar Foto</button>
+                <button class="capture-file btn"> <i class="bx bx-camera"></i> Tirar Foto</button>
+                <button class="save-file btn"> <i class="bx bx-save"></i> Salvar Foto</button-->
+            </div>
+
+        </form>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
